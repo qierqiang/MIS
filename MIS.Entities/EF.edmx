@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ErpModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="S_SystemProfile">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="int" Nullable="false" />
+          <Property Name="FCategory" Type="char" MaxLength="10" />
+          <Property Name="FKey" Type="char" MaxLength="50" Nullable="false" />
+          <Property Name="FValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="FDescription" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="S_User">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="int" Nullable="false" />
+          <Property Name="FFullName" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="FUserName" Type="char" MaxLength="20" Nullable="false" />
+          <Property Name="FPassword" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="FDisabled" Type="bit" />
+          <Property Name="FRoleID" Type="int" />
+          <Property Name="FDepartmentID" Type="int" />
+        </EntityType>
+        <EntityContainer Name="ErpModelStoreContainer">
+          <EntitySet Name="S_SystemProfile" EntityType="Self.S_SystemProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="S_User" EntityType="Self.S_User" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ErpModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="S_SystemProfile">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="Int32" Nullable="false" />
+          <Property Name="FCategory" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="FKey" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="S_User">
+          <Key>
+            <PropertyRef Name="FID" />
+          </Key>
+          <Property Name="FID" Type="Int32" Nullable="false" />
+          <Property Name="FFullName" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FUserName" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FPassword" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FDisabled" Type="Boolean" />
+          <Property Name="FRoleID" Type="Int32" />
+          <Property Name="FDepartmentID" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="ErpEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="S_SystemProfile" EntityType="Self.S_SystemProfile" />
+          <EntitySet Name="S_User" EntityType="Self.S_User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ErpModelStoreContainer" CdmEntityContainer="ErpEntities">
+          <EntitySetMapping Name="S_SystemProfile">
+            <EntityTypeMapping TypeName="ErpModel.S_SystemProfile">
+              <MappingFragment StoreEntitySet="S_SystemProfile">
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="FCategory" ColumnName="FCategory" />
+                <ScalarProperty Name="FKey" ColumnName="FKey" />
+                <ScalarProperty Name="FValue" ColumnName="FValue" />
+                <ScalarProperty Name="FDescription" ColumnName="FDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="S_User">
+            <EntityTypeMapping TypeName="ErpModel.S_User">
+              <MappingFragment StoreEntitySet="S_User">
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="FFullName" ColumnName="FFullName" />
+                <ScalarProperty Name="FUserName" ColumnName="FUserName" />
+                <ScalarProperty Name="FPassword" ColumnName="FPassword" />
+                <ScalarProperty Name="FDisabled" ColumnName="FDisabled" />
+                <ScalarProperty Name="FRoleID" ColumnName="FRoleID" />
+                <ScalarProperty Name="FDepartmentID" ColumnName="FDepartmentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

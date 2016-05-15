@@ -1,0 +1,4 @@
+D:\Projects\MIS\MIS.Core\bin\Debug\MIS.Core.dll
+D:\Projects\MIS\MIS.Core\bin\Debug\MIS.Core.pdb
+D:\Projects\MIS\MIS.Core\obj\Debug\MIS.Core.dll
+D:\Projects\MIS\MIS.Core\obj\Debug\MIS.Core.pdb
