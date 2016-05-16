@@ -2,3 +2,11 @@ D:\Projects\MIS\MIS.Core\bin\Debug\MIS.Core.dll
 D:\Projects\MIS\MIS.Core\bin\Debug\MIS.Core.pdb
 D:\Projects\MIS\MIS.Core\obj\Debug\MIS.Core.dll
 D:\Projects\MIS\MIS.Core\obj\Debug\MIS.Core.pdb
+D:\Projects\MIS\MIS.Core\obj\Debug\MIS.Core.csprojResolveAssemblyReference.cache
+D:\Projects\MIS\MIS.Core\bin\Debug\MIS.Core.dll.config
+D:\Projects\MIS\MIS.Core\bin\Debug\EntityFramework.dll
+D:\Projects\MIS\MIS.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\MIS\MIS.Core\bin\Debug\EntityFramework.xml
+D:\Projects\MIS\MIS.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\MIS\MIS.Core\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Projects\MIS\MIS.Core\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

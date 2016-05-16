@@ -23,6 +23,13 @@ namespace MIS.Server
         public MainWindow()
         {
             InitializeComponent();
+
+            RemotingSvr.Instance.Start();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            RemotingSvr.Instance.Stop();
         }
     }
 }

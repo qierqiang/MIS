@@ -1,0 +1,14 @@
+D:\Projects\MIS\MIS.Entities\bin\Debug\MIS.Entities.dll.config
+D:\Projects\MIS\MIS.Entities\bin\Debug\MIS.Entities.dll
+D:\Projects\MIS\MIS.Entities\bin\Debug\MIS.Entities.pdb
+D:\Projects\MIS\MIS.Entities\bin\Debug\EntityFramework.dll
+D:\Projects\MIS\MIS.Entities\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\MIS\MIS.Entities\bin\Debug\MIS.Core.dll
+D:\Projects\MIS\MIS.Entities\bin\Debug\MIS.Core.pdb
+D:\Projects\MIS\MIS.Entities\bin\Debug\EntityFramework.xml
+D:\Projects\MIS\MIS.Entities\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\MIS\MIS.Entities\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Projects\MIS\MIS.Entities\obj\Debug\MIS.Entities.csprojResolveAssemblyReference.cache
+D:\Projects\MIS\MIS.Entities\obj\Debug\MIS.Entities.dll
+D:\Projects\MIS\MIS.Entities\obj\Debug\MIS.Entities.pdb
+D:\Projects\MIS\MIS.Entities\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

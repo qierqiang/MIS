@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ErpModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="S_SystemProfile">
+    <Key>
+      <PropertyRef Name="FID" />
+    </Key>
+    <Property Name="FID" Type="Int32" Nullable="false" />
+    <Property Name="FCategory" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="FKey" Type="String" MaxLength="50" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="S_User">
+    <Key>
+      <PropertyRef Name="FID" />
+    </Key>
+    <Property Name="FID" Type="Int32" Nullable="false" />
+    <Property Name="FFullName" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FUserName" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FPassword" Type="String" MaxLength="32" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FDisabled" Type="Boolean" />
+    <Property Name="FRoleID" Type="Int32" />
+    <Property Name="FDepartmentID" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ErpEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="S_SystemProfile" EntityType="Self.S_SystemProfile" />
+    <EntitySet Name="S_User" EntityType="Self.S_User" />
+  </EntityContainer>
+</Schema>

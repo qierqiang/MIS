@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ErpModelStoreContainer" CdmEntityContainer="ErpEntities">
+    <EntitySetMapping Name="S_SystemProfile">
+      <EntityTypeMapping TypeName="ErpModel.S_SystemProfile">
+        <MappingFragment StoreEntitySet="S_SystemProfile">
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="FCategory" ColumnName="FCategory" />
+          <ScalarProperty Name="FKey" ColumnName="FKey" />
+          <ScalarProperty Name="FValue" ColumnName="FValue" />
+          <ScalarProperty Name="FDescription" ColumnName="FDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="S_User">
+      <EntityTypeMapping TypeName="ErpModel.S_User">
+        <MappingFragment StoreEntitySet="S_User">
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="FFullName" ColumnName="FFullName" />
+          <ScalarProperty Name="FUserName" ColumnName="FUserName" />
+          <ScalarProperty Name="FPassword" ColumnName="FPassword" />
+          <ScalarProperty Name="FDisabled" ColumnName="FDisabled" />
+          <ScalarProperty Name="FRoleID" ColumnName="FRoleID" />
+          <ScalarProperty Name="FDepartmentID" ColumnName="FDepartmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ErpModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="S_SystemProfile">
+    <Key>
+      <PropertyRef Name="FID" />
+    </Key>
+    <Property Name="FID" Type="int" Nullable="false" />
+    <Property Name="FCategory" Type="char" MaxLength="10" />
+    <Property Name="FKey" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="FValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="FDescription" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="S_User">
+    <Key>
+      <PropertyRef Name="FID" />
+    </Key>
+    <Property Name="FID" Type="int" Nullable="false" />
+    <Property Name="FFullName" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="FUserName" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="FPassword" Type="char" MaxLength="32" Nullable="false" />
+    <Property Name="FDisabled" Type="bit" />
+    <Property Name="FRoleID" Type="int" />
+    <Property Name="FDepartmentID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ErpModelStoreContainer">
+    <EntitySet Name="S_SystemProfile" EntityType="Self.S_SystemProfile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="S_User" EntityType="Self.S_User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
